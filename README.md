@@ -13,6 +13,9 @@ ___
 
 
 ## Periodic SSL: Brief Introduction for SimPer
+<p align="center">
+    <img src="assets/motivation.gif" width="800"> 
+</p>
 From human physiology to environmental evolution, important processes in nature often exhibit meaningful and strong __periodic__ or __quasi-periodic__ changes. Due to their inherent label scarcity, learning useful representations for periodic tasks with limited or no supervision is of great benefit. Yet, existing self-supervised learning (SSL) methods overlook the intrinsic periodicity in data, and fail to learn representations that capture periodic or frequency attributes.
 
 We present _SimPer_, a simple contrastive SSL regime for learning periodic information in data. To exploit the periodic inductive bias, SimPer introduces customized ___periodicity-invariant___ and ___periodicity-variant___ augmentations, ___periodic feature similarity measures___, and a ___generalized contrastive loss___ for learning efficient and robust periodic representations.
@@ -23,7 +26,7 @@ We benchmark SimPer on common real-world tasks in _human behavior analysis_, _en
 ## Apply SimPer on Customized Datasets
 To apply SimPer on customized datasets, you will need to define the following key components. (Check out [SimPer tutorial](https://github.com/YyzHarry/SimPer/tree/main/tutorial) for RotatingDigits dataset.)
 
-#### #1: Periodicity-Variant and Invariant Augmentations *(see [src/augmentations.py](./src/augmentation.py))*
+#### #1: Periodicity-Variant and Invariant Augmentations *(see [src/augmentation.py](./src/augmentation.py))*
 For (periodicity-)invariant augmentations, one could refer to SOTA contrastive methods (e.g., SimCLR). For periodicity-variant augmentations, we propose speed / frequency augmentation:
 ```python
 import tensorflow as tf
@@ -100,7 +103,7 @@ for features, labels in zip(all_features, all_labels):
 ## Updates
 - __[07/2023]__ We provide a [hands-on tutorial](https://github.com/YyzHarry/SimPer/tree/main/tutorial) of SimPer. Check it out! [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YyzHarry/SimPer/blob/master/tutorial/tutorial.ipynb)
 - __[06/2023]__ Check out the [Oral talk video](https://youtu.be/uEezGU3P_-I) (15 mins) for our paper.
-- __[02/2023]__ Paper accepted to ICLR 2023 as __Notable-Top-5% & Oral Presentation__. We have released the code.
+- __[02/2023]__ Paper accepted to ICLR 2023 as __Notable-Top-5% & Oral Presentation__.
 - __[10/2022]__ [arXiv version](https://arxiv.org/abs/2210.03115) posted. The code is currently under cleaning. Please stay tuned for updates.
 
 
