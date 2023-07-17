@@ -7,8 +7,8 @@ _11th International Conference on Learning Representations (ICLR 2023), **Notabl
 [[Project Page](https://simper.csail.mit.edu/)] [[Paper](https://arxiv.org/abs/2210.03115)] [[Video](https://youtu.be/uEezGU3P_-I)] [Blog Post] [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YyzHarry/SimPer/blob/master/tutorial/tutorial.ipynb)
 ___
 <p align="center">
-    <img src="assets/simper.png" width="600"> <br>
-<b>SimPer</b> learns robust <i>periodic representations</i> with high frequency resolution.
+    <img src="assets/simper.png" width="800"> <br>
+<b>SimPer</b> learns robust <i><b>periodic representations</b></i> with high frequency resolution.
 </p>
 
 
@@ -21,9 +21,9 @@ We benchmark SimPer on common real-world tasks in _human behavior analysis_, _en
 
 
 ## Apply SimPer on Customized Datasets
-To apply SimPer on your customized dataset, you will need define the following key components. (Check out [SimPer tutorial](https://github.com/YyzHarry/SimPer/tree/main/tutorial) for RotatingDigits dataset.)
+To apply SimPer on customized datasets, you will need to define the following key components. (Check out [SimPer tutorial](https://github.com/YyzHarry/SimPer/tree/main/tutorial) for RotatingDigits dataset.)
 
-#### #1: Periodicity-Variant and Invariant Augmentations *(see [src/augmentations.py](./src/augmentations.py))*
+#### #1: Periodicity-Variant and Invariant Augmentations *(see [src/augmentations.py](./src/augmentation.py))*
 For (periodicity-)invariant augmentations, one could refer to SOTA contrastive methods (e.g., SimCLR). For periodicity-variant augmentations, we propose speed / frequency augmentation:
 ```python
 import tensorflow as tf
