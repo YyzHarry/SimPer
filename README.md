@@ -14,8 +14,9 @@ ___
 
 ## Periodic SSL: Brief Introduction for SimPer
 <p align="center">
-    <img src="assets/motivation.gif" width="800"> 
+    <img src="assets/motivation.gif" width="700"> 
 </p>
+
 From human physiology to environmental evolution, important processes in nature often exhibit meaningful and strong __periodic__ or __quasi-periodic__ changes. Due to their inherent label scarcity, learning useful representations for periodic tasks with limited or no supervision is of great benefit. Yet, existing self-supervised learning (SSL) methods overlook the intrinsic periodicity in data, and fail to learn representations that capture periodic or frequency attributes.
 
 We present _SimPer_, a simple contrastive SSL regime for learning periodic information in data. To exploit the periodic inductive bias, SimPer introduces customized ___periodicity-invariant___ and ___periodicity-variant___ augmentations, ___periodic feature similarity measures___, and a ___generalized contrastive loss___ for learning efficient and robust periodic representations.
