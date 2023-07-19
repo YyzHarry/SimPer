@@ -1,15 +1,35 @@
 # SimPer: Simple Self-Supervised Learning of Periodic Targets
 
 This repository contains the implementation code for paper: <br>
-__[SimPer: Simple Self-Supervised Learning of Periodic Targets](https://arxiv.org/abs/2210.03115)__ <br>
-Yuzhe Yang, Xin Liu, Jiang Wu, Silviu Borac, Dina Katabi, Ming-Zher Poh, Daniel McDuff <br>
+__SimPer: Simple Self-Supervised Learning of Periodic Targets__ <br>
+[Yuzhe Yang](https://www.mit.edu/~yuzhe/), [Xin Liu](https://xliucs.github.io/), [Jiang Wu](), [Silviu Borac](), [Dina Katabi](https://people.csail.mit.edu/dina/), [Ming-Zher Poh](https://scholar.google.com/citations?user=HhErKoYAAAAJ&hl=en), [Daniel McDuff](https://scholar.google.com/citations?user=m7Jr-b4AAAAJ&hl=en) <br>
 _11th International Conference on Learning Representations (ICLR 2023), **Notable-Top-5% & Oral**_ <br>
-[[Project Page](https://simper.csail.mit.edu/)] [[Paper](https://arxiv.org/abs/2210.03115)] [[Video](https://youtu.be/uEezGU3P_-I)] [Blog Post] [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YyzHarry/SimPer/blob/master/tutorial/tutorial.ipynb)
+[[Project Page](https://simper.csail.mit.edu/)] [[Paper](https://arxiv.org/abs/2210.03115)] [[Video](https://youtu.be/uEezGU3P_-I)] [[Blog Post](https://ai.googleblog.com/2023/07/simper-simple-self-supervised-learning.html)] [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YyzHarry/SimPer/blob/master/tutorial/tutorial.ipynb)
+
+If you find this code or idea useful, please consider citing our work:
+```bib
+@inproceedings{yang2023simper,
+  title={SimPer: Simple Self-Supervised Learning of Periodic Targets},
+  author={Yang, Yuzhe and Liu, Xin and Wu, Jiang and Borac, Silviu and Katabi, Dina and Poh, Ming-Zher and McDuff, Daniel},
+  booktitle={International Conference on Learning Representations},
+  year={2023},
+  url={https://openreview.net/forum?id=EKpMeEV0hOo}
+}
+```
+
 ___
 <p align="center">
     <img src="assets/simper.png" width="800"> <br>
 <b>SimPer</b> learns robust <i><b>periodic representations</b></i> with high frequency resolution.
 </p>
+
+
+## Updates
+- __[07/2023]__ SimPer is featured on the [Google AI Blog](https://ai.googleblog.com/2023/07/simper-simple-self-supervised-learning.html).
+- __[07/2023]__ We provide a [hands-on tutorial](https://github.com/YyzHarry/SimPer/tree/main/tutorial) of SimPer. Check it out! [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YyzHarry/SimPer/blob/master/tutorial/tutorial.ipynb)
+- __[06/2023]__ Check out the [Oral talk video](https://youtu.be/uEezGU3P_-I) (15 mins) for our paper.
+- __[02/2023]__ Paper accepted to ICLR 2023 as __Notable-Top-5% & Oral Presentation__.
+- __[10/2022]__ [arXiv version](https://arxiv.org/abs/2210.03115) posted. The code is currently under cleaning. Please stay tuned for updates.
 
 
 ## Periodic SSL: Brief Introduction for SimPer
@@ -101,20 +121,5 @@ for features, labels in zip(all_features, all_labels):
 ```
 
 
-## Updates
-- __[07/2023]__ We provide a [hands-on tutorial](https://github.com/YyzHarry/SimPer/tree/main/tutorial) of SimPer. Check it out! [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YyzHarry/SimPer/blob/master/tutorial/tutorial.ipynb)
-- __[06/2023]__ Check out the [Oral talk video](https://youtu.be/uEezGU3P_-I) (15 mins) for our paper.
-- __[02/2023]__ Paper accepted to ICLR 2023 as __Notable-Top-5% & Oral Presentation__.
-- __[10/2022]__ [arXiv version](https://arxiv.org/abs/2210.03115) posted. The code is currently under cleaning. Please stay tuned for updates.
-
-
-## Citation
-```bib
-@inproceedings{yang2023simper,
-  title={SimPer: Simple Self-Supervised Learning of Periodic Targets},
-  author={Yang, Yuzhe and Liu, Xin and Wu, Jiang and Borac, Silviu and Katabi, Dina and Poh, Ming-Zher and McDuff, Daniel},
-  booktitle={International Conference on Learning Representations},
-  year={2023},
-  url={https://openreview.net/forum?id=EKpMeEV0hOo}
-}
-```
+## Contact
+If you have any questions, feel free to contact us through email (yuzhe@mit.edu) or Github issues. Enjoy!
